@@ -93,7 +93,7 @@ module.exports = function ( grunt ) {
             base: {
                 files: [
                     {
-                        src: [ 'themes/default/images/**', 'dialogs/**', 'third-party/**', 'lang/**' ],
+                        src: [ 'themes/default/images/**', 'dialogs/**', 'lang/**' ],
                         dest: disDir
 
                     }

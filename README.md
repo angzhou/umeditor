@@ -1,6 +1,12 @@
 UMeditor
 =======
 
+## Installation
+
+```bash
+npm install umeditor --save
+```
+
 ## UMeditor富文本编辑器 ##
 
 UMeditor，简称UM，是 [ueditor](http://ueditor.baidu.com) 的简版。是为满足广大门户网站对于简单发帖框和回复框的需求，专门定制的在线富文本编辑器。我们的目标不仅是要提高在线编辑的编辑体验，也希望能改变前端技术中关于富文本技术的门槛，让大家不再觉得这块是个大坑。
