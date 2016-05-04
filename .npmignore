@@ -1,8 +1,8 @@
 changelog.md
-dialogs
-_examples
+/dialogs/
+/_examples/
 Gruntfile.js
-lang
-node_modules
+/lang/
+/node_modules/
 _src
-themes
+/themes/
