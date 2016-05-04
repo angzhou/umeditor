@@ -50,7 +50,7 @@ module.exports = function ( grunt ) {
         server = typeof server === "string" ? server.toLowerCase() : 'php';
         encode = typeof encode === "string" ? encode.toLowerCase() : 'utf8';
 
-        disDir = disDir + encode + '-' + server + '/';
+        //disDir = disDir + encode + '-' + server + '/';
         zipName = zipName + pkg.name + pkg.version.replace(/\./g, '_') + '-' + encode + '-' + server + '.zip';
 
     } )();
@@ -98,42 +98,6 @@ module.exports = function ( grunt ) {
 
                     }
                 ]
-            },
-            demo: {
-                files: [
-                    {
-                        src: '_examples/completeDemo.html',
-                        dest: disDir + 'index.html'
-                    }
-                ]
-            },
-            php: {
-
-                expand: true,
-                src: 'php/**',
-                dest: disDir
-
-            },
-            asp: {
-
-                expand: true,
-                src: 'asp/**',
-                dest: disDir
-
-            },
-            jsp: {
-
-                expand: true,
-                src: 'jsp/**',
-                dest: disDir
-
-            },
-            net: {
-
-                expand: true,
-                src: 'net/**',
-                dest: disDir
-
             }
         },
         transcoding: {
@@ -218,7 +182,8 @@ module.exports = function ( grunt ) {
 
     grunt.registerTask('default', 'UEditor Mini build', function () {
 
-        var tasks = [ 'concat', 'cssmin', 'closurecompiler', 'copy:base', 'copy:'+server, 'copy:demo', 'replace:demo' ];
+        //var tasks = [ 'concat', 'cssmin', 'closurecompiler', 'copy:base', 'copy:'+server, 'copy:demo', 'replace:demo' ];
+        var tasks = [ 'concat', 'cssmin', 'closurecompiler', 'copy:base'];
 
         if ( encode === 'gbk' ) {
             tasks.push( 'replace:fileEncode' );
