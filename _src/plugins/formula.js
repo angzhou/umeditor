@@ -24,7 +24,7 @@ UM.plugins['formula'] = function () {
                 node.tagName = 'iframe';
                 node.setAttr({
                     'frameborder': '0',
-                    'src': me.getOpt('UMEDITOR_HOME_URL') + 'dialogs/formula/formula.html',
+                    'src': me.getOpt('UMEDITOR_FORMULA_URL') + 'formula/formula.html',
                     'data-latex': utils.unhtml(latex)
                 });
             }

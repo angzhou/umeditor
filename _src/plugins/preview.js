@@ -13,11 +13,11 @@ UM.commands['preview'] = {
         var w = window.open('', '_blank', ''),
             d = w.document,
             c = this.getContent(null,null,true),
-            path = this.getOpt('UMEDITOR_HOME_URL'),
+            path = this.getOpt('UMEDITOR_FORMULA_URL'),
             formula = c.indexOf('mathquill-embedded-latex')!=-1 ?
-                '<link rel="stylesheet" href="' + path + 'third-party/mathquill/mathquill.css"/>' +
-                '<script src="' + path + 'third-party/jquery.min.js"></script>' +
-                '<script src="' + path + 'third-party/mathquill/mathquill.min.js"></script>':'';
+                '<link rel="stylesheet" href="' + path + 'build/mathquill.css"/>' +
+                '<script src="' + path + 'formula/jquery.min.js"></script>' +
+                '<script src="' + path + 'build/mathquill.min.js"></script>':'';
         d.open();
         d.write('<html><head>' + formula + '</head><body><div>'+c+'</div></body></html>');
         d.close();
