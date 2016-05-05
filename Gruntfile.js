@@ -195,7 +195,7 @@ module.exports = function ( grunt ) {
         tasks.push( 'transcoding' );
 
         //config修改
-        updateConfigFile();
+        //updateConfigFile();
 
         grunt.task.run( tasks );
 
